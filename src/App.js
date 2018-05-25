@@ -29,7 +29,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="table-container">
         <SearchBar
           filterText={this.state.filterText}
           inStockOnly={this.state.inStockOnly}

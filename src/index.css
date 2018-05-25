@@ -1,5 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  background:
+}
+
+.table-container {
+  margin: 0 auto;
+  width: 200px;
+  margin-top: 100px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 29px;
+
 }
