@@ -1,6 +1,7 @@
 import React from "react";
 import ProductTable from "./components/ProductTable.js";
 import SearchBar from "./components/SearchBar.js";
+import NavBar from "./components/NavBar.js"
 
 // Filterable product table
 class App extends React.Component {
@@ -21,7 +22,7 @@ class App extends React.Component {
     });
   }
 
-  handleInStockChange(inStockOnly) {
+  handleInStockChange(inStockOnly)  {
     this.setState({
       inStockOnly: inStockOnly
     });
@@ -30,6 +31,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="table-container">
+        <NavBar filterText={this.state.filterText}/>
+        <NavBar />
+        <NavBar />
+        <NavBar />
         <SearchBar
           filterText={this.state.filterText}
           inStockOnly={this.state.inStockOnly}
